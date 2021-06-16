@@ -1,0 +1,5 @@
+rootProject.name = "LqcZXing"
+include ':app'
+include ':lib-tools'
+include ':lib-network'
+include ':lib-zxing'

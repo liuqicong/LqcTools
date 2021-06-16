@@ -1,0 +1,33 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.compileSdkVersion
+    buildToolsVersion rootProject.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.minSdkVersion
+        targetSdkVersion rootProject.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+    }
+    useLibrary 'org.apache.http.legacy'
+}
+
+dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    //Gson解析
+    api 'com.google.code.gson:gson:2.8.6'
+    //Fresco框架
+    api 'com.facebook.fresco:fresco:2.3.0'
+    api 'com.facebook.fresco:animated-gif:2.3.0'
+    api 'com.facebook.fresco:animated-webp:2.3.0'
+    api 'com.facebook.fresco:imagepipeline-okhttp3:2.3.0'
+
+    // 弹性效果
+    api 'me.everything:overscroll-decor-android:1.0.4'
+
+    api files('libs/httpmime-4.1.3.jar')
+    api project(':lib-zxing')
+    api project(':lib-network')
+
+}
