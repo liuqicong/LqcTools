@@ -3,7 +3,7 @@
 project.ext {
     compileSdkVersion = 28  //Android9.0
     buildToolsVersion = "28.0.3"
-    minSdkVersion = 23  //Android6.0；高于19出现无法打补丁的问题
+    minSdkVersion = 19
     targetSdkVersion = 28
     //applicationId = "com.tupperware.mgt"
 
